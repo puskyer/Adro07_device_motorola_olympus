@@ -1,1 +1,2 @@
 rild.libargs=-d /dev/pts/1
+ro.zygote.disable_gl_preload=true

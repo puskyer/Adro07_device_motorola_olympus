@@ -41,6 +41,14 @@ BOARD_EGL_CFG := device/motorola/olympus/config/egl.cfg
 USE_OPENGL_RENDERER := true
 TARGET_USES_GL_VENDOR_EXTENSIONS := true
 BOARD_EGL_NEEDS_LEGACY_FB := true
+TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
+BOARD_EGL_NEEDS_FNW:= true
+BOARD_EGL_WORKAROUND_BUG_10194508 := true
+
+BOARD_USE_SKIA_LCDTEXT := true
+BOARD_NO_ALLOW_DEQUEUE_CURRENT_BUFFER := true
+
+
 
 BOARD_USE_MOTO_DOCK_HACK := true
 BOARD_USES_AUDIO_LEGACY := true
@@ -87,7 +95,7 @@ WIFI_DRIVER_MODULE_AP_ARG   := "firmware_path=/system/vendor/firmware/fw_bcmdhd_
 WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/bcmdhd/parameters/firmware_path"
 WIFI_DRIVER_FW_PATH_STA     := "/system/vendor/firmware/fw_bcmdhd.bin"
 WIFI_DRIVER_FW_PATH_AP      := "/system/vendor/firmware/fw_bcmdhd_apsta.bin"
-WIFI_DRIVER_FW_PATH_P2P     := "/system/vendor/firmware/fw_bcmdhd_p2p.bin"
+#WIFI_DRIVER_FW_PATH_P2P     := "/system/vendor/firmware/fw_bcmdhd_p2p.bin"
 endif
 ifeq ($(BOARD_WLAN_DEVICE),bcm4329)
 BOARD_WPA_SUPPLICANT_DRIVER := WEXT

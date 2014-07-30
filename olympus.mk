@@ -152,7 +152,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Default USB Mode
 PRODUCT_PROPERTY_OVERRIDES += \
-	persist.sys.usb.config=mass_storage
+	persist.sys.usb.config=mass_storage,adb
+
+# selinux
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.boot.selinux=disabled \
+	ro.build.selinux=0
 
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
