@@ -112,7 +112,7 @@ BOARD_BLUETOOTH_LIBBT_VNDCFG := device/motorola/olympus/config/bluetooth/bt_vend
 BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY := true
 
 # Twrp
-TARGET_RECOVERY_INITRC := device/motorola/olympus/root/init.recovery.rc
+# TARGET_RECOVERY_INITRC := device/motorola/olympus/root/init.recovery.rc
 DEVICE_RESOLUTION := 540x960
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
