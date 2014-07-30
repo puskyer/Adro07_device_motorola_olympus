@@ -4,8 +4,8 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 LOCAL_PATH := device/motorola/olympus
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/root/init.target.rc:root/init.target.rc \
-    $(LOCAL_PATH)/root/init.target.usb.rc:root/init.target.usb.rc \
+    $(LOCAL_PATH)/root/init.olympus.rc:root/init.olympus.rc \
+    $(LOCAL_PATH)/root/init.olympus.usb.rc:root/init.olympus.usb.rc \
     $(LOCAL_PATH)/root/ueventd.olympus.rc:root/ueventd.olympus.rc \
     $(LOCAL_PATH)/root/fstab.olympus:root/fstab.olympus
 
