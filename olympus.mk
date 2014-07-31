@@ -56,6 +56,7 @@ PRODUCT_PACKAGES += Torch \
 
 PRODUCT_PACKAGES += com.android.future.usb.accessory \
 			mot_boot_mode \
+			libemoji \
 			OlympusParts
 
 #wlan firmware
