@@ -418,11 +418,13 @@
     </string-array>
 
     <!-- True will enable the electron beam screen-off animation. -->
+    <add-resource type="bool" name="config_screenOffAnimation" />
     <bool name="config_screenOffAnimation">true</bool>
 
     <!-- Enables built-in SIP phone capability -->
     <bool name="config_built_in_sip_phone">true</bool>
 
     <!-- File to use when sharing mass storage over USB -->
+    <add-resource type="string" name="config_legacyUmsLunFile" />
     <string name="config_legacyUmsLunFile">/sys/class/android_usb/f_mass_storage/lun/file</string>
 </resources>
