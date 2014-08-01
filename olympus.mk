@@ -46,7 +46,12 @@ PRODUCT_PACKAGES += l2ping \
 
 #Audio
 PRODUCT_PACKAGES += DockAudio \
-			audio.a2dp.default
+			audio.a2dp.default \
+			audio.usb.default
+
+# libnetcmdiface.so
+PRODUCT_PACKAGES += \
+	libnetcmdiface
 
 #Camera and lights
 PRODUCT_PACKAGES += Torch \
