@@ -131,7 +131,8 @@ TW_EXTERNAL_STORAGE_PATH := "/external_sd"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "external_sd"
 BOARD_HAS_NO_SELECT_BUTTON := true
 
-
+# Skip droiddoc build to save build time
+BOARD_SKIP_ANDROID_DOC_BUILD := true
 
 BOARD_SEPOLICY_DIRS += \
         device/motorola/olympus/sepolicy
